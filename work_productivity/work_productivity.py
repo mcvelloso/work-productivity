@@ -1,4 +1,5 @@
 #!/usr/bin/env python3.13
+
 import argparse
 from datetime import date
 
@@ -37,7 +38,6 @@ def main():
     try:
         workdays = calculate_workdays(args.start_date, args.end_date)
         print(f"Number of workdays: {len(workdays)}")
-        # print("Workdays:", [d.date() for d in workdays])
     except Exception as e:
         print(f"Error: {e}")
         print("Please provide valid dates in YYYY-MM-DD format.")
