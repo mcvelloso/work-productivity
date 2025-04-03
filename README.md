@@ -1,8 +1,13 @@
 # Work Productivity Calculator
 
-A command-line Python tool to calculate work performance as a percentage, based on days worked versus total available workdays, while accounting for holidays, sick days, and other time off.
+A command-line Python tool to calculate work performance as a percentage, based on days worked in the office versus total available workdays, while accounting for holidays, sick days, and other time off.
 
 **Because nothing says "effective employee evaluation" like reducing your hard work to a single, glorious percentage. Trusted by zero HR departments worldwide (we hope).**
+
+> **Disclaimer:** This productivity calculator is built on the ancient corporate wisdom that *true* work only happens under the watchful glare of fluorescent office lights. Remote work? That’s just adult recess. We proudly ignore your 10-hour Zoom marathons, Slack notifications at midnight, and deep existential dread while emailing from your couch. If you weren’t seen awkwardly hovering by the break room Keurig, were you even contributing?
+>
+> This tool has been rigorously not tested and fully endorsed by absolutely no HR professionals. Use it to justify promotions, guilt your coworkers, or simply feel something again.
+
 
 ---
 
