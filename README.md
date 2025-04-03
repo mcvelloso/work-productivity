@@ -13,7 +13,7 @@ A command-line Python tool to calculate work performance as a percentage, based 
 
 ## **Features**
 
-- Calculates total workdays between two dates
+- Calculates total possible workdays between two dates
 - Adjusts for holidays (custom or default NYSE in given date range)
 - Accounts for sick days and personal days off
 - Outputs a work performance percentage
