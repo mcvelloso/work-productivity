@@ -1,6 +1,5 @@
 #!/usr/bin/env python3.13
-
-import sys
+import argparse
 from datetime import date
 
 import pandas as pd
@@ -27,15 +26,16 @@ def calculate_workdays(start_date, end_date=None):
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: ./work_productivity.py <start_date> [end_date]")
-        print("Example: ./work_productivity.py 2015-01-01 2025-01-13")
+    parser = argparse.ArgumentParser(description="Calculate workdays between two dates.")
 
-    start_date = sys.argv[1]
-    end_date = sys.argv[2] if len(sys.argv) > 2 else None
+    parser.add_argument("--start-date", type=str, required=True, help="Start date in YYYY-MM-DD format")
+    parser.add_argument("--end-date", type=str, default=None,
+                        help="End date in YYYY-MM-DD format (optional; defaults to today's date)")
+
+    args = parser.parse_args()
 
     try:
-        workdays = calculate_workdays(start_date, end_date)
+        workdays = calculate_workdays(args.start_date, args.end_date)
         print(f"Number of workdays: {len(workdays)}")
         # print("Workdays:", [d.date() for d in workdays])
     except Exception as e:
