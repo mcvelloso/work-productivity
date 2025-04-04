@@ -49,7 +49,7 @@ python work_productivity.py --days-in-office 120 --start-date 2024-01-01 --end-d
 |----------|------|----------|-------------|
 | `--days-in-office` | int | Yes | Number of days actually worked |
 | `--start-date` | YYYY-MM-DD | Yes | Start date for the evaluation period |
-| `--end-date` | YYYY-MM-DD | Yes | End date for the evaluation period |
+| `--end-date` | YYYY-MM-DD | No | End date for the evaluation period (default: today's date) |
 | `--holidays` | int | No | Number of holidays (default: Number of NYSE holidays in the given date range) |
 | `--sick-days` | int | No | Number of sick days (default: 0) |
 | `--days-off` | int | No | Other time off (default: 0) |
